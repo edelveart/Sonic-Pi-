@@ -22,10 +22,8 @@ end
 
 with_fx :reverb, mix: 0.3, room: 0.5 do
   with_fx :compressor, pre_amp: 2 do
-    live_loop :bass do
-      
+    live_loop :bass do 
       time = (ring 3, 1, 3, 1, 3, 1)
-      
       synth :hollow, note:  (ring :a2, :b2, :e2, :e2).tick, amp: 1,
         attack: 0.05, sustain: 0.3, decay: 0.3, release: 3.2
       synth :hollow, note:  (ring :a1, :b1, :e1, :e1).look, amp: 0.5, cutoff: 129,
@@ -37,18 +35,15 @@ with_fx :reverb, mix: 0.3, room: 0.5 do
 end
 with_fx :reverb, mix: 0.5, room: 0.1 do
   with_fx :compressor, pre_amp: 1.2 do
-    live_loop :strings, delay: 8 do
-      
-      time = (ring 3, 1, 3, 1, 3, 1)
-      
+    live_loop :strings, delay: 8 do   
+      time = (ring 3, 1, 3, 1, 3, 1)  
       synth :dark_ambience, note:  (ring :a4, :a4, :g4, :r).tick,
         amp: 2, attack: 0.05, release: 1.5, pan: -0.75
       synth :dark_ambience, note:  (ring :a3, :a3, :g3, :r).look,
         amp: 2, attack: 0.05, release: 1.5, pan: 0
       synth :dark_ambience, note:  (ring :a3, :a3, :g3, :r).look,
         amp: 2, attack: 0.05, release: 1.5, pan: 0.75
-      sleep time.look
-      
+      sleep time.look  
     end
   end
 end
@@ -60,7 +55,6 @@ with_fx :reverb, mix: 0.4, room: 0.2 do
       tick
       r1 = (knit :a2, 4, :b2, 2, :e1, 2, :e2, 2)
       r2 = (knit :a1, 4, :b1, 2, :e0, 2, :e1, 2)
-      
       synth :fm, note: r1.tick , divisor: 7, depth: 4, amp: 1,  
         release: 0.24 if (spread 8,11).look  
       sleep 0.25
