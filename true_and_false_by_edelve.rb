@@ -99,7 +99,6 @@ live_loop :bools_game3, delay: 24 do
 		
 		drum_b1.length.times do
 			samp_ul= (knit  :bd_haus, 1).reverse
-			
 			sample samp_ul.tick("bass_drum"),
 			amp: 2.5,
 			compress: rand_i(1),
