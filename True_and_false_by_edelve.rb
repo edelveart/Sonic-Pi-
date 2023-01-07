@@ -93,8 +93,7 @@ live_loop :bools_game3, delay: 24 do
 		dur = 4
 		drum_b1 = (bools 1,0,1,0,1,0,1,0)
 		drum_b2 =  (bools 1,0,1,0,1,0,1,0).rotate(1)
-		drum_b3 =  (bools 1,0,1,0,1,0,1,0).rotate(0)
-				
+		drum_b3 =  (bools 1,0,1,0,1,0,1,0).rotate(0)		
 		pan_ul = (line 1,-1, inclusive: true, steps: 8).reflect
 		
 		drum_b1.length.times do
