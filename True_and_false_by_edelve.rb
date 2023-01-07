@@ -128,7 +128,7 @@ end
 with_fx :slicer, phase: 1.0/8 do
 	live_loop :lunar, delay: 0 do
 		sample :ambi_lunar_land, amp: 0.3, 
-		pan: rdist(0.4,0.1), rate: 0.9
+		pan: rdist(0.4,0.1), rate: 0.91
 		sleep 0.5
 	end
 end
