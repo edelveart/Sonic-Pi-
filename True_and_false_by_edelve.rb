@@ -2,7 +2,7 @@
 
 ## True and False by DJ_ Edelve ##
 
-## Composition by DJ_Edelve ##
+## Composition by DJ_Edelve 2022 ##
 
 use_bpm 67
 
